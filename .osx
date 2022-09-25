@@ -54,6 +54,18 @@ defaults write com.apple.dock orientation -string "right"
 # Disable "Show recent applications in Dock"
 defaults write com.apple.dock show-recents -bool false
 
+# Don't show Items in Menu Bar
+defaults write com.apple.controlcenter NSStatusItem Visible AirDrop -bool false
+defaults write com.apple.controlcenter NSStatusItem Visible Bluetooth -bool false
+
+# Menu Bar Clock show date always
+defaults write com.apple.controlcenter NSStatusItem Visible Clock -bool true
+
+# Menu Bar Clock 24h Format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d. MMM  HH:mm"
+defaults write com.apple.menuextra.clock Show24Hour -bool true
+defaults write com.apple.menuextra.clock ShowDate -bool true
+
 
 
 
