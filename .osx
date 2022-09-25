@@ -33,13 +33,15 @@ else
 fi
 
 
-
 ###############################################################################
 # General
 ###############################################################################
 
 # Enable Dark Mode
 defaults write -globalDomain AppleInterfaceStyle -string "Dark"
+
+# Disable "Close windows when quitting an app"
+defaults write -globalDomain NSQuitAlwaysKeepsWindows -boolean true
 
 
 
