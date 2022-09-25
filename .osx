@@ -71,9 +71,10 @@ defaults write com.apple.Spotlight "NSStatusItem Visible Item-0" -bool false
 
 # Show Time Machine in Menu Bar
 defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.TimeMachine" -bool true
-defaults write com.apple.systemuiserver menuExtras -array \
-        "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-        "/System/Library/CoreServices/Menu Extras/VPN.menu"
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
+
+# Show VPN in Menu Bar
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/VPN.menu"
 
 
 
