@@ -41,10 +41,18 @@ fi
 defaults write -globalDomain AppleInterfaceStyle -string "Dark"
 
 # Disable "Close windows when quitting an app"
-defaults write -globalDomain NSQuitAlwaysKeepsWindows -boolean true
+defaults write -globalDomain NSQuitAlwaysKeepsWindows -bool true
 
 
+###############################################################################
+# Dock & Menu Bar
+###############################################################################
 
+# Dock on the right side
+defaults write com.apple.dock orientation -string "right"
+
+# Disable "Show recent applications in Dock"
+defaults write com.apple.dock show-recents -bool false
 
 
 
